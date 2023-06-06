@@ -30,11 +30,11 @@ require_once('dbconnection_postgres.php');?>
           echo "<td>".$row["cpf"]."</td>";
           echo "<td>".$row["nome"]."</td>";
           echo "<td>".$row["data_nasc"]."</td>";
-          echo "<td>".$row["cargo"] ."</td>";
+          echo "<td>".$row["cargo"]."</td>";
           echo "<td><a href='download_curriculo.php?cpf=".$row["cpf"]. "'>Download</a></td>";
           echo "<td>";
           echo "<a href='editar_professores.php?cpf=" .$row["cpf"]."'>Editar</a> | ";
-          echo "<a href='excluir_professores.php?cpf=" .$row["cpf"]."'>Excluir</a>";
+          echo "<a href='deletar_professores.php?cpf=" .$row["cpf"]."'>Excluir</a>";
           echo "</td>";
           echo "</tr>";
         }
