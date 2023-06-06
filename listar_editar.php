@@ -3,6 +3,7 @@
 require_once('dbconnection_postgres.php');?>
 <html>
 <head>
+  <title>Lista de Professores</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 </head>
 <body>
@@ -34,7 +35,7 @@ require_once('dbconnection_postgres.php');?>
           echo "<td><a href='download_curriculo.php?cpf=".$row["cpf"]. "'>Download</a></td>";
           echo "<td>";
           echo "<a href='editar_professores.php?cpf=" .$row["cpf"]."'>Editar</a> | ";
-          echo "<a href='excluir_professores.php?cpf=" .$row["cpf"]."'>Excluir</a>";
+          echo "<a href='excluir_professor.php?cpf=" .$row["cpf"]."'>Excluir</a>";
           echo "</td>";
           echo "</tr>";
         }

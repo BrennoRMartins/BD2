@@ -21,6 +21,6 @@ if ($stmt->rowCount() > 0) {
 
   echo $curriculo;
 } else {
-  echo "Currículo não encontrado.";
+  echo "Curriculo não encontrado";
 }
 ?>
